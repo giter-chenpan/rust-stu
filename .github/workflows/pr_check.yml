@@ -31,9 +31,3 @@ jobs:
       run: trunk build
     - name: Run tests
       run: cargo test --verbose
-    - name: Deploy demo
-      uses: actions/deploy-pages@v3
-      with:
-        branch: gh-pages
-        folder: ./dist
-        clean: true
